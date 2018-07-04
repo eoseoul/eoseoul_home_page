@@ -1,0 +1,162 @@
+html {font-size:16px;}
+#wrap {background-color:#f1f1f1;}
+    /*Header (/container/header)*/
+header {background-color: #000; transition: background-color 50ms ease-in-out; width:100%; border-bottom:1px solid #fff; margin:0 auto; position:fixed; top:0; left:0; z-index: 10;}
+header.fixed {background-color: #333;}
+.header_inner {position:relative; width:100%; max-width: 1280px; margin:auto; height:89px; box-sizing:border-box; padding:0 16px;}
+/*header #logo {display:table-cell; height:100%; text-align:left; vertical-align: middle;}*/
+header #logo {position:absolute; display:table; height:100%; text-align:left; vertical-align: middle;}
+header #logo a { display:table-cell; vertical-align:middle; color:#eee; font-family: 'Questrial', Sans-serif; font-size:1.75rem;}
+header #logo a img {height:70px; vertical-align: middle;}
+nav {height:100%;}
+nav ul {display:table; height:100%; vertical-align:middle; text-align: center;margin:0 auto;}
+nav li {display:table-cell; height:100%; vertical-align: middle; position:relative;}
+nav li:after {position:absolute; content:''; display:block; bottom:0; height:0; width:100%; background:#fff; transition: height 150ms ease-in;}
+nav li.active:after,
+nav li:hover:after {height:2px;}
+nav li a {height:100%; color:#fff; font-family: 'Montserrat', Sans-serif; padding:0 15px; font-size:0.875rem; font-weight:700; transition: color 150ms ease-out;}
+nav li.active a,
+nav li:hover a {color:rgba(255,255,255,0.7);}
+
+    /*Footer (/container/footer)*/
+#footer {text-align:center; height:94px; background-color:#383838; display:table; width:100%;}
+#footer p {display:table-cell; vertical-align: middle; color:#fff; font-size:0.75rem;}
+
+    /*main (/components/banner)*/
+.main_banner {background:url(../img/5b28c3dc61649.jpg) center 0 no-repeat; text-align:center; background-size:cover; background-position: center 66%; /*background-attachment: fixed;*/ padding:190px 0 100px; height:calc(80vh - 90px); position:relative; z-index: 2; display:table; width:100%;}
+.main_banner__inner {display:table-cell; vertical-align: middle; text-align:center;}
+.main_banner__logo {margin-bottom:60px;}
+.main_banner__logo img {width:129px; margin-bottom:15px;}
+.main_banner__logo p {margin:15px 0; color:#fff; font-size:1.25rem; line-height:1.2; font-weight:normal;}
+.main_banner__link {width:50%; margin:0 auto;}
+.main_banner__link li {display:inline-block; text-align: center; vertical-align: middle; margin:0 8px; border-radius: 8px; overflow:hidden;}
+.main_banner__link li a {vertical-align: middle; position:relative; display: block; height:32px; width:32px; padding:8px; margin:auto;}
+.main_banner__link li a:after {content:''; display:none; position:absolute; top:0; left:0;width:100%; height:100%; background:rgba(255, 255, 255, 0.15); transition: 150ms ease-in; z-index: 1;}
+.main_banner__link li a:hover:after {display:block;}
+.main_banner__link li img {width:100%;}
+
+/*main (/components/eostat)*/
+/*main (/components/pomelo)*/
+.main_product {position:relative; height: 100vh;/* overflow: hidden;*/}
+.main_product .main_product__background {}
+.main_product .main_product__background-img {position:absolute; width:100%; top:0; bottom:0; left:0; right:0; height:100%; background-repeat: no-repeat; background-attachment: fixed; background-size:cover; background-position: center;}
+.main_product .main_product__background-opacity {width:100%; height:100%; background-color: rgba(69,69,69,0.86); -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#db454545,endColorstr=#db454545);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#db454545,endColorstr=#db454545); zoom: 1; position: absolute; left: 0; top: 0; right: 0; bottom: 0;}
+.main_product.main_eostat .main_product__background-img {background-image:url(../img/5b2b641d3f41e.jpg);}
+.main_product.main_pomelo .main_product__background-img {background-image:url(../img/598f9207eb47c.jpg);}
+
+.main_product .main_product__section {position:absolute; width:100%; height:100%; top:0; left:0; right:0; bottom:0; margin: auto; box-sizing:border-box; padding:0 16px; overflow:hidden;}
+.main_product .main_product__section .main_product__text {position:absolute; top:50%; left:50%; width:620px; margin-left:-624px; transform: translateY(-50%); overflow:hidden;}
+.main_product.main_eostat .main_product__section .main_product__text {position:fixed;}
+.main_product .main_product__section .main_product__text .main_product__text-subtitle {color:#fff; font-size:0.8125rem;}
+.main_product.main_pomelo .main_product__section .main_product__text .main_product__text-subtitle {font-weight:700;}
+.main_product .main_product__section .main_product__text .main_product__text-title {color:#fff; font-size:0.8125rem; margin:20px 0 10px; font-family:'Quicksand',sans-serif; line-height:1.2; font-size:2.4375rem;}
+.main_product .main_product__section .main_product__text p {margin:26px 0; color:#fff; font-size:0.8125rem; width:60%; line-height:1.6;}
+.main_product .main_product__section .main_product__text .main_product__text-anchor {height:60px}
+.main_product .main_product__section .main_product__text a.link-anchor {display:inline-block; padding:10px 25px; font-size:0.75rem; color:#fff; border:1px solid transparent}
+.main_product.main_eostat .main_product__section .main_product__text a.link-anchor {background-color:#5b069c;}
+.main_product.main_pomelo .main_product__section .main_product__text a.link-anchor {background-color:rgba(0,210,85,1);}
+.main_product .main_product__section .main_product__text a.link-anchor:hover {box-shadow: 0 0 0.125em #000; transition: 150ms ease-in-out;}
+.main_product.main_eostat .main_product__section .main_product__text a.link-anchor:hover {background-color:#fff; border:1px solid #9903FF; color:#5b069c;}
+.main_product.main_pomelo .main_product__section .main_product__text a.link-anchor:hover {background-color:transparent; border:1px solid rgba(0,210,85,1); color:rgba(0,210,85,1);}
+.main_product.main_pomelo .main_product__section .main_product__text .powered {width:70%;}
+.main_product.main_pomelo .main_product__section .main_product__text .powered img {width:100%;}
+.main_product .main_product__section .main_product__product {float:right; width:50%; position:relative; text-align:center; height:100%;}
+.main_product .main_product__section .main_product__product img {display:table-cell; vertical-align: middle;}
+/*.main_product.main_pomelo .main_product__section .main_product__product img {position:absolute; bottom:0; left:0; right:0; width:50%; text-align:center;}*/
+.main_product.main_eostat .main_product__section .main_product__product div {background: url(../img/5b29b6346fc32.png) no-repeat fixed right bottom; height: 100%; background-size: 50%;}
+.main_product.main_pomelo .main_product__section .main_product__product img {width:55%; position:absolute; left:0; right:0; bottom:0; margin:auto;}
+
+.main_video { background:#000;}
+.main_video__section {width:100%; max-width:1280px; margin:auto;}
+.main_video__section-wrap {position:relative; width:100%; height:0; padding-bottom:56.25%;}
+.main_video__section iframe {position:absolute; top:0; bottom:0; left:0; right:0; width:100%; height:100%;}
+
+
+
+.member_introduce {width:100%; max-width:1280px; margin:0 auto; padding-top:90px;}
+.member_introduce h2 {font-family: 'Quicksand',sans-serif; font-size:2.4375rem; line-height:1.2; margin:20px 0 60px; text-align:center;}
+.member_introduce .member_introduce__list ul {margin-bottom:30px;}
+.member_introduce .member_introduce__list ul:after {content:''; display:block; clear:both;}
+.member_introduce .member_introduce__list li {float:left; width:23%; margin:0 1%; padding-bottom:20px; transition: 120ms ease-in;}
+.member_introduce .member_introduce__list li .photo {margin-bottom:15px; overflow:hidden; transition: 120ms ease-in;}
+.member_introduce .member_introduce__list li .photo img {width:100%; transition: 120ms ease-in;}
+.member_introduce .member_introduce__list li article {padding: 0 8px; box-sizing:border-box; font-family:'montserrat',sans-serif;}
+.member_introduce .member_introduce__list li article h3 {font-size:0.875rem; font-weight:700; line-height:1.8; color:#363636;}
+.member_introduce .member_introduce__list li article h4 {font-size:0.75rem; font-weight:400; margin-bottom:20px; color:rgb(136, 136, 136);}
+.member_introduce .member_introduce__list li article p {font-size:0.75rem; font-weight:300; line-height:1.6; color:rgb(136, 136, 136); letter-spacing: 0; padding-top:10px; border-top:1px solid #dfdfdf;}
+.member_introduce .member_introduce__list li:hover {background-color:rgba(255, 255, 255, 0.6); border-radius: 16px; overflow:hidden;}
+.member_introduce .member_introduce__list li:hover .photo {box-shadow: 0 0.125em 0.45em #4a4a4a;}
+.member_introduce .member_introduce__list li:hover .photo img {transform: scale(1.1)}
+
+.conduct_mission {width:100%; max-width:1280px; margin:0 auto; min-height:calc(100vh - 229px); padding-top:90px;}
+.conduct_mission h2 {font-family: 'Quicksand',sans-serif; font-size:2.4375rem; line-height:1.2; margin:20px 0; text-align:center;}
+.conduct_mission p {margin-bottom:40px;}
+.conduct_mission li {margin-bottom:25px; margin-left:16px; text-indent: 4px;}
+.conduct_mission p,
+.conduct_mission li dd {font-size:0.875rem; font-weight:300; line-height:1.6; color:rgb(136, 136, 136); letter-spacing: 0; padding-top:10px;}
+.conduct_mission li dt {font-size:0.875rem; font-weight:400; color:#333;}
+
+.disclosure_index {width:100%; max-width:1280px; margin:0 auto; min-height:calc(100vh - 229px); padding-top:90px;}
+.disclosure_index h2 {font-family: 'Quicksand',sans-serif; font-size:2.4375rem; line-height:1.2; margin:20px 0; text-align:center;}
+.disclosure_index h3 {font-family: 'Quicksand',sans-serif; font-size:1.125rem; line-height:1.2; margin:20px 0; text-align:left;}
+.disclosure_index p {font-size:0.875rem; font-weight:300; line-height:1.6; color:rgb(136, 136, 136); letter-spacing: 0; padding-top:10px;}
+.disclosure_index p a {color:#333; font-weight:400; transition: 150ms ease-out;}
+.disclosure_index p a:hover {color:#fff;}
+
+.main_map {position:relative; width:100%; height:0; padding-bottom:56.25%;}
+#gmap {position:absolute!important; width:100%; height:100%; top:0; left:0;}
+
+@media all and (max-width: 1690px) {}
+@media all and (max-width: 1280px) {
+  .member_introduce,
+  .conduct_mission,
+  .disclosure_index  {padding:90px 16px 0; box-sizing: border-box;}
+  .main_product .main_product__section {box-sizing: border-box;}
+
+  .main_product .main_product__section .main_product__text {left:16px; margin-left:0;}
+
+}
+@media all and (max-width: 980px) {
+  nav ul {margin-right:0;}
+  .main_banner__link li {margin:0; width:15.76%;}
+  .main_product .main_product__section .main_product__text,
+  .main_product.main_eostat .main_product__section .main_product__text,
+  .main_product.main_pomelo .main_product__section .main_product__text {position:relative; top:60px; transform: none;}
+  .main_product .main_product__section .main_product__product,
+  .main_product.main_eostat .main_product__section .main_product__product,
+  .main_product.main_pomelo .main_product__section .main_product__product {float:none; width:100%;}
+  /*.main_product .main_product__section .main_product__product div,*/
+  .main_product.main_eostat .main_product__section .main_product__product div {background-position: center center; background-attachment: initial; background-size: 80%;}
+  .main_product.main_pomelo .main_product__section .main_product__product img {top:0;}
+  .member_introduce .member_introduce__list li {width:48%; min-height:580px;}
+}
+@media all and (max-width: 736px) {
+  html {font-size:12px;}
+  .header_inner {height:74px;}
+  header #logo {display:block; text-align: center; position:relative; height:auto;}
+  header #logo a {display:block; margin:0 auto;}
+  header #logo a img {height:50px;}
+
+  #footer {height:64px;}
+
+  nav {height:20px; text-align:center;}
+  nav ul {margin-right:auto;}
+  .main_banner__link li {margin:0; width:31.76%;}
+  .main_product .main_product__section .main_product__text {width:100%; left:0;}
+  .main_product .main_product__section .main_product__text p {width:100%;}
+  .main_product .main_product__section .main_product__product {height:50%; margin-top:60px;}
+  .main_product.main_eostat .main_product__section .main_product__product div {background-position: top center;}
+  .main_product.main_pomelo .main_product__section .main_product__text .powered {width:60%;}
+  .main_product.main_pomelo .main_product__section .main_product__text .powered p {margin:13px 0;}
+  .main_product.main_pomelo .main_product__section .main_product__product img {top:60px;}
+}
+@media all and (max-width: 480px) {
+  nav {}
+  .member_introduce .member_introduce__list li {width:96%; margin:0 2%;}
+}
+@media all and (max-width: 400px) {
+  html {font-size:11px;}
+  .header_inner {padding:0;}
+  nav li a {padding:0 8px;}
+}
