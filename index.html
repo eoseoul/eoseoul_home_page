@@ -37,7 +37,6 @@
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>-->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8CCexf9XTJcH09mStr-HRW4nin4k8J7w&amp;region=KR"></script>
-  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -121,7 +120,6 @@
 
   <div class="main_video">
     <section class="main_video__section">
-      <!--<iframe id="ytbplayer" :src="'https://www.youtube.com/embed/77w4xDtWX7Q?mode=opaque&autoplay=0&playsinline=1&loop=1&rel=0&playlist=77w4xDtWX7Q&showinfo=1?autoplay=0&loop=0&rel=0&controls=1&showinfo=0&enablejsapi=1&version=3'" frameborder="0" allowfullscreen="true" style="width:100%; height:100%;"></iframe>-->
       <div class="main_video__section-wrap">
         <iframe src="https://www.youtube.com/embed/77w4xDtWX7Q?mode=opaque&autoplay=0&loop=1&rel=0&playlist=77w4xDtWX7Q&showinfo=0&playsinline=1" frameborder="0" allowfullscreen="true" style="width:100%; height:100%;"></iframe>
       </div>
@@ -133,7 +131,7 @@
   </div>
   <script>
     $(function () {
-      var latlng = new google.maps.LatLng(37.400363, 127.104397);
+      var latlng = new google.maps.LatLng(37.400133, 127.104196);
       var type = '' === 'hybrid' ? 'hybrid' : 'roadmap';
       var zoomControl = '';
       var mapTypeControl = '';
@@ -153,8 +151,8 @@
       var map = new google.maps.Map(document.getElementById("gmap"), myOptions);
 
       var clickIcon = new google.maps.MarkerImage(
-        '/admin/img/map_icon.png',
-        new google.maps.Size(14, 33),
+        'public/img/map_icon.png',
+        new google.maps.Size(25, 45),
         new google.maps.Point(0, 0),
         new google.maps.Point(7, 32)
       );
