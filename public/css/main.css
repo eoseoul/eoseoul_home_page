@@ -27,7 +27,32 @@ nav li:hover a {color:rgba(255,255,255,0.7);}
 .main_banner__inner {display:table-cell; vertical-align: middle; text-align:center;}
 .main_banner__logo {margin-bottom:60px;}
 .main_banner__logo img {width:129px; margin-bottom:15px;}
-.main_banner__logo p {margin:15px 0; color:#fff; font-size:1.25rem; line-height:1.2; font-weight:normal;}
+.main_banner__logo .typingBox {margin:15px 0;}
+.main_banner__logo .typingBox .typing {color:#fff; font-size:1.25rem; line-height:1.4; font-weight:normal; padding:0.25rem 0;}
+/*.main_banner__logo .typingBox .typing4 {margin-top:15px; border-right: .1em solid #fff;}
+.main_banner__logo .typingBox .typing1 {
+  width:34.383125rem; white-space: nowrap; overflow: hidden; margin:0 auto;
+  -webkit-animation: typing1 6 steps(31, end);
+  animation: typing1 6 steps(31, end);
+}
+.main_banner__logo .typingBox .typing2 {
+  width:57.608125rem; white-space: nowrap; overflow: hidden; margin:0 auto;
+  -webkit-animation: typing2 6 steps(31, end);
+  animation: typing2 6 steps(31, end);
+}
+.main_banner__logo .typingBox .typing3 {
+  width:83.056875rem; white-space: nowrap; overflow: hidden; margin:0 auto;
+  -webkit-animation: typing3 6 steps(31, end);
+  animation: typing3 6 steps(31, end);
+}
+.main_banner__logo .typingBox .typing4 {
+  width:20.663125rem; white-space: nowrap; overflow: hidden; margin:0 auto;
+  -webkit-animation: typing4 6 steps(31, end), blink-caret 1s step-end infinite;
+  animation: typing4 6 steps(31, end), blink-caret 1s step-end infinite;
+}*/
+
+
+
 .main_banner__link {width:50%; margin:0 auto;}
 .main_banner__link li {display:inline-block; text-align: center; vertical-align: middle; margin:0 8px; border-radius: 8px; overflow:hidden;}
 .main_banner__link li a {vertical-align: middle; position:relative; display: block; height:32px; width:32px; padding:8px; margin:auto;}
@@ -106,6 +131,48 @@ nav li:hover a {color:rgba(255,255,255,0.7);}
 
 .main_map {position:relative; width:100%; height:0; padding-bottom:56.25%;}
 #gmap {position:absolute!important; width:100%; height:100%; top:0; left:0;}
+
+
+/*@-webkit-keyframes typing1 {
+  from {
+    width: 0
+  }
+  to {
+    width: 34.383125rem
+  }
+}
+@-webkit-keyframes typing2 {
+  from {
+    width: 0
+  }
+  to {
+    width: 57.608125rem
+  }
+}
+@-webkit-keyframes typing3 {
+  from {
+    width: 0
+  }
+  to {
+    width: 83.056875rem
+  }
+}
+@-webkit-keyframes typing4 {
+  from {
+    width: 0
+  }
+  to {
+    width: 20.663125rem
+  }
+}
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: #fff
+  }
+}*/
 
 @media all and (max-width: 1690px) {}
 @media all and (max-width: 1280px) {
