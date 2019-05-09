@@ -8866,6 +8866,7 @@ button.button {
 
 .footer-01__wrapper {
   display: flex;
+  text-align: center;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
